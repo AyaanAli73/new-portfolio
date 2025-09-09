@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mo. Ayaan Ali - Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-mode">
+    <div class="particles-container">
+        <canvas id="particles-canvas"></canvas>
+    </div>
+
+    <header id="main-header">
+        <div class="navbar">
+            <div class="nav-inner">
+                <div class="logo-container">
+                    <div class="logo-image-container">
+                        <img src="logo.png" alt="Logo" class="logo-image">
+                    </div>
+                    <div class="logo-text">
+                        <div class="logo-name">Mo. Ayaan Ali</div>
+                        <div class="logo-title">Full Stack Developer</div>
+                    </div>
+                </div>
+
+                <nav class="desktop-nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#achievements" class="nav-link">Achievements</a>
+                    <a href="#timeline" class="nav-link">Timeline</a>
+                    <a href="#quotes" class="nav-link">Quotes</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <div class="nav-controls">
+                    <div class="search-container">
+                        <i class="search-icon fas fa-search"></i>
+                        <input type="text" class="search-input" placeholder="Search projects..." id="search-input">
+                    </div>
+
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-sun"></i>
+                    </button>
+
+                    <a href="#" class="cv-button">
+                        <i class="fas fa-download"></i>
+                        CV
+                    </a>
+
+                    <button class="mobile-menu-button" id="mobile-menu-button">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-header">
+                <div class="mobile-logo">
+                    <div class="mobile-logo-icon"><img src="logo2.png" alt="Logo" class="logo-image">
+              </div>
+                    <div>
+                        <div class="logo-name">Mo. Ayaan Ali</div>
+                        <div class="logo-title">Full Stack Dev</div>
+                    </div>
+                </div>
+                <button class="mobile-close-button" id="mobile-close-button">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <nav class="mobile-nav">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#skills" class="mobile-nav-link">Skills</a>
+                <a href="#projects" class="mobile-nav-link">Projects</a>
+                <a href="#services" class="mobile-nav-link">Services</a>
+                <a href="#achievements" class="mobile-nav-link">Achievements</a>
+                <a href="#timeline" class="mobile-nav-link">Timeline</a>
+                <a href="#quotes" class="mobile-nav-link">Quotes</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+            </nav>
+
+            <button class="mobile-cv-button">
+                Download CV
+            </button>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div>
+                    <h1 class="hero-title fade-in">
+                        <span class="gradient-text">MO. AYAAN ALI</span>
+                        <span class="hero-subtitle">Full Stack Developer — Jodhpur</span>
+                    </h1>
+
+                    <p class="hero-description fade-in">
+                        I craft modern web experiences with a flowing anime-inspired visual language — mixing clean engineering with dramatic, emotive UI.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="primary-button fade-in">View Projects</a>
+                        <a href="#contact" class="secondary-button fade-in">Contact</a>
+                        <a href="#" class="accent-button fade-in">Download CV</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-card fade-in">
+                            <div class="stat-label">Projects</div>
+                            <div class="stat-value">8+</div>
+                        </div>
+                        <div class="stat-card fade-in">
+                            <div class="stat-label">Experience</div>
+                            <div class="stat-value">Internship</div>
+                        </div>
+                        <div class="stat-card fade-in">
+                            <div class="stat-label">Skills</div>
+                            <div class="stat-value">6+</div>
+                        </div>
+                        <div class="stat-card fade-in">
+                            <div class="stat-label">Location</div>
+                            <div class="stat-value">Jodhpur</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-container">
+                    <div class="hero-image-wrapper fade-in">
+                        <img src="hero.png" alt="Animated Avatar" class="hero-image">
+                    </div>
+
+                    <svg class="hero-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 150 C60 30, 140 30, 190 150" stroke="#ff6b9a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M20 160 C70 40, 130 40, 180 160" stroke="#7be4f4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div>
+                    <h3 class="section-title fade-in">About Me</h3>
+                    <p class="about-description fade-in">
+                        I'm <strong>Mo. Ayaan Ali</strong> — a B.Tech Computer Science student and Full Stack Developer from Jodhpur. I focus on performance, accessibility, and emotional UI. I completed a web dev virtual internship at CodSoft (Apr 25, 2025 — May 25, 2025).
+                    </p>
+
+                    <div class="skills-grid">
+                        <div class="skill-tag fade-in">VS Code</div>
+                        <div class="skill-tag fade-in">HTML • CSS</div>
+                        <div class="skill-tag fade-in">JavaScript • React</div>
+                        <div class="skill-tag fade-in">Python</div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="stats-card fade-in">
+                        <h4 class="stats-title">Quick Stats</h4>
+                        <div class="stats-item">
+                            <span>Internship</span>
+                            <span>CodSoft (1 month)</span>
+                        </div>
+                        <div class="stats-item">
+                            <span>Education</span>
+                            <div class="education-details">
+                                <span class="education-degree">B.Tech — Computer Science</span>
+                                <span class="education-location">Maulana Azad University, Jodhpur</span>
+                            </div>
+                        </div>
+                        <div class="stats-item">
+                            <span>Languages</span>
+                            <span>English, Hindi</span>
+                        </div>
+                    </div>
+
+                    <div class="mini-stats">
+                        <div class="mini-stat fade-in">
+                            Projects<br>
+                            <strong>8+</strong>
+                        </div>
+                        <div class="mini-stat fade-in">
+                            Open to work<br>
+                            <strong>Yes</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="skills-container">
+                <h3 class="section-title fade-in">Core Technologies</h3>
+                <p class="skills-description fade-in">
+                    My proficiency in key web technologies, from front-end to back-end development.
+                </p>
+
+                <div class="skills-grid-large">
+                    <div class="skill-card fade-in">
+                        <div class="skill-header">
+                            <div class="skill-name">HTML</div>
+                            <div class="skill-percentage">95%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card fade-in">
+                        <div class="skill-header">
+                            <div class="skill-name">CSS</div>
+                            <div class="skill-percentage">92%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="92"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card fade-in">
+                        <div class="skill-header">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-percentage">90%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card fade-in">
+                        <div class="skill-header">
+                            <div class="skill-name">React</div>
+                            <div class="skill-percentage">86%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="86"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card fade-in">
+                        <div class="skill-header">
+                            <div class="skill-name">Node.js</div>
+                            <div class="skill-percentage">78%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="78"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card fade-in">
+                        <div class="skill-header">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-percentage">75%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="projects-header">
+                <h3 class="section-title fade-in">Selected Projects</h3>
+                <a href="#" class="see-all-button fade-in" id="see-all-button">See All Projects →</a>
+            </div>
+
+            <div class="projects-grid" id="projects-grid">
+                </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="services-container">
+                <h3 class="section-title fade-in">My Services</h3>
+                <p class="section-subtitle fade-in">A fluid process for a seamless outcome.</p>
+                <div class="services-grid" id="services-grid">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="achievements-container">
+                <h3 class="section-title fade-in">Achievements</h3>
+
+                <div class="achievements-grid">
+                    <div class="achievement-card fade-in">
+                        <div class="achievement-icon">★</div>
+                        <div class="achievement-content">
+                            <div class="achievement-title">Web Dev Internship</div>
+                            <div class="achievement-details">CodSoft • 2025</div>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card fade-in">
+                        <div class="achievement-icon">★</div>
+                        <div class="achievement-content">
+                            <div class="achievement-title">Hackathon Top Submitter</div>
+                            <div class="achievement-details">Local Hack • 2024</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="timeline">
+        <div class="container">
+            <div class="timeline-container">
+                <h3 class="section-title fade-in">Career Timeline</h3>
+
+                <div class="timeline">
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-number">1</div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Web Development Internship — CodSoft</div>
+                            <div class="timeline-date">Apr 25, 2025 — May 25, 2025</div>
+                            <p class="timeline-description">Focused on frontend development, creating responsive layouts and interactive components using modern web technologies.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-number">2</div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Personal Projects & Skill Development</div>
+                            <div class="timeline-date">Ongoing</div>
+                            <p class="timeline-description">Continuously building projects like a Rubik's Cube solver, portfolio templates, and e-commerce demos to expand my skill set.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quotes" class="quotes-section">
+        <div class="container">
+            <div class="quote" id="quote-text">
+                "Breathe like water — build like code."
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-container">
+                <h3 class="section-title fade-in">Contact</h3>
+                <p class="contact-description fade-in">
+                    Interested in working together? Send a message or email me at <a href="mailto:ayaan.ali@example.com" class="contact-email">ayaan.ali@example.com</a>
+                </p>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Your name" class="form-input fade-in" required>
+                        <input type="email" placeholder="Your email" class="form-input fade-in" required>
+                    </div>
+                    <input type="text" placeholder="Subject" class="form-input fade-in">
+                    <textarea placeholder="Message" class="form-textarea fade-in" required></textarea>
+                    <div class="form-actions">
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:ayaan.ali@example.com" class="social-link" aria-label="Mail">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                        <button type="submit" class="submit-button fade-in">Send Message</button>
+                    </div>
+                    <p id="form-success-message" class="form-success"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>© <span id="current-year"></span> Mo. Ayaan Ali</div>
+                <div class="text-sm">Designed with pink + blue Demon Slayer–inspired aesthetics</div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Github</a>
+                    <a href="#" class="footer-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="projects-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-button" aria-label="Close Projects Modal">&times;</button>
+            <h2 class="section-title">All Projects</h2>
+            <p class="section-subtitle">A collection of my recent and past work.</p>
+            <div id="all-projects-grid" class="projects-grid">
+                </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
